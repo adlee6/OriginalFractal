@@ -46,8 +46,8 @@ public void rosePetal(int x, int y, float rot, float size, int se) {
  scale(1/size);
 }
 
-public void leaf(float var) {
- rotate(var+random);
+public void leaf(float variable) {
+ rotate(variable+random);
  strokeWeight(5);
  fill(#5B8957);
  beginShape();
