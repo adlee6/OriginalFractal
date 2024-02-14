@@ -1,4 +1,5 @@
 float random = (float)(Math.random()*2*PI);
+
 public void setup() {
   size(500,500);
   background(#FCE8F6);
@@ -13,17 +14,16 @@ public void draw() {
   leaf(-2*PI/3);
   strokeWeight(1);
   rose(40);
-  
 }
 
 public void rose(int petals) {
   if(petals == 0) {
     fill(#FA5871);
     ellipse(0,0,40,40);
-  }else{
+  } else {
     rose(petals-1);
     rosePetal(-5-(int)(petals/3.5),0,(PI+petals/3)/3,6*petals/(float)(petals+1), (int)(Math.random()*3));
-}
+  }
 }
 
 public void rosePetal(int x, int y, float rot, float size, int se) {
