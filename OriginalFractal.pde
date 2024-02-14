@@ -4,7 +4,7 @@ public void setup() {
   size(500,500);
   background(#FCE8F6);
   //noLoop();
-  frameRate(8);
+  frameRate(3);
 }
 
 public void draw() {
