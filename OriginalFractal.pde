@@ -41,7 +41,8 @@ public void rosePetal(int x, int y, float rot, float size, int se) {
  curveVertex(x-6,y);
  curveVertex(x+4,y+12);
  curveVertex(x+3,y);
- curveVertex(x+3,y);
+ curveVertex(x+4,y-14);
+ curveVertex(x+4,y-14);
  endShape(CLOSE);
  scale(1/size);
 }
